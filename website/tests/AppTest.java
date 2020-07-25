@@ -16,11 +16,18 @@ public class AppTest {
 
 		driver.get("http://localhost:8080");
 
+		WebElement aboutUsLink = driver.findElement(By.LinkText("About Us"));
+
+		aboutUsLink.click();
+		
+
 		Thread.sleep(1000);
 
-		if (driver.getPageSource().contains("About Us")) {
+		if (driver.getPageSource().contains("humour")) {
+			System.out.println("Can find text - humour");
 			System.out.println("Pass");
 		} else {
+			System.out.println("Cannot find text - humour");
 			System.out.println("Fail");
 		}
 
