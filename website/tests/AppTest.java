@@ -9,8 +9,8 @@ public class AppTest {
        public static void main(String[] args) throws IOException, InterruptedException {
        		System.setProperty("webdiver.chrome.driver", "/usr/local/bin/chromedriver");
  		ChromeOptions chromeOptions = new ChromeOptions();
- 		ChromeOptions.addArguments("--headless");
- 		ChromeOptions.addArguments("--no-sandbox");
+ 		chromeOptions.addArguments("--headless");
+ 		chromeOptions.addArguments("--no-sandbox");
 
 		WebDriver driver = new ChromeDriver(chromeOptions);
 
