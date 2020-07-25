@@ -18,7 +18,7 @@ public class AppTest {
 
 		driver.get("http://localhost:8080");
 
-		WebElement aboutUsLink = driver.findElement(By.LinkText("About Us"));
+		WebElement aboutUsLink = driver.findElement(By.linkText("About Us"));
 
 		aboutUsLink.click();
 		
